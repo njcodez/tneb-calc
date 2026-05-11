@@ -20,23 +20,63 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TNEB Bill Comparison Calculator",
+  title: {
+    default: "TNEB Bill Comparison Calculator",
+    template: "%s | TNEB Calculator",
+  },
+
   description:
-    "Compare old and revised TNEB electricity tariff bills and calculate your savings instantly.",
+    "Compare old and revised Tamil Nadu electricity tariff slabs instantly. Calculate savings under the new TNEB tariff structure.",
 
   keywords: [
-    "TNEB",
-    "Electricity Bill",
-    "Tamil Nadu",
-    "Tariff Calculator",
-    "Bill Comparison",
+    "TNEB calculator",
+    "Tamil Nadu electricity bill calculator",
+    "TNEB slab calculator",
+    "Electricity tariff Tamil Nadu",
+    "TNEB comparison",
+    "Current bill calculator",
+    "Tamil Nadu EB bill",
   ],
+
+  authors: [
+    {
+      name: "Your Name",
+    },
+  ],
+
+  creator: "Your Name",
+
+  metadataBase: new URL(
+    "https://YOUR-VERCEL-URL.vercel.app"
+  ),
 
   openGraph: {
     title: "TNEB Bill Comparison Calculator",
+
     description:
-      "See how much you save under the revised electricity tariff.",
+      "Compare previous and revised Tamil Nadu electricity tariff slabs instantly.",
+
+    url: "https://YOUR-VERCEL-URL.vercel.app",
+
+    siteName: "TNEB Calculator",
+
+    locale: "en_IN",
+
     type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title: "TNEB Bill Comparison Calculator",
+
+    description:
+      "Compare old vs revised Tamil Nadu EB tariffs instantly.",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
