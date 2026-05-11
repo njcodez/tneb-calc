@@ -5,7 +5,7 @@ export const translations = {
     subtitle:
       "See how much you save under the revised electricity tariff",
 
-    placeholder: "Enter 2-month usage",
+    placeholder: "Enter 2-month usage(in units)",
 
     button: "Calculate Savings",
 
@@ -24,7 +24,7 @@ export const translations = {
     subtitle:
       "புதிய மின்சார கட்டணத்தில் நீங்கள் எவ்வளவு சேமிக்கிறீர்கள் என்பதை பாருங்கள்",
 
-    placeholder: "2 மாத பயன்பாட்டை உள்ளிடவும்",
+    placeholder: "2 மாத பயன்பாட்டை உள்ளிடவும்(in units)",
 
     button: "சேமிப்பை கணக்கிடு",
 
