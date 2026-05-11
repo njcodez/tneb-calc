@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Inter } from "next/font/google";
 
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -40,14 +41,14 @@ export const metadata: Metadata = {
 
   authors: [
     {
-      name: "Your Name",
+      name: "Neeraj",
     },
   ],
 
-  creator: "Your Name",
+  creator: "Neeraj",
 
   metadataBase: new URL(
-    "https://YOUR-VERCEL-URL.vercel.app"
+    "https://tneb.vercel.app"
   ),
 
   openGraph: {
@@ -56,7 +57,7 @@ export const metadata: Metadata = {
     description:
       "Compare previous and revised Tamil Nadu electricity tariff slabs instantly.",
 
-    url: "https://YOUR-VERCEL-URL.vercel.app",
+    url: "https://tneb.vercel.app",
 
     siteName: "TNEB Calculator",
 
@@ -86,23 +87,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      suppressHydrationWarning
-      className={cn(
-        "h-full scroll-smooth",
-        geistSans.variable,
-        geistMono.variable,
-        inter.variable,
-        "font-sans antialiased"
-      )}
-    >
+   <html
+  lang="en"
+  suppressHydrationWarning
+  data-scroll-behavior="smooth"
+  className={cn(
+    "h-full scroll-smooth",
+    geistSans.variable,
+    geistMono.variable,
+    inter.variable,
+    "font-sans antialiased"
+  )}
+>
       <body
         className={cn(
           "min-h-screen overflow-x-hidden bg-background text-foreground"
         )}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );

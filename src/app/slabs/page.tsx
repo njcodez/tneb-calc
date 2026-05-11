@@ -8,7 +8,7 @@ import SlabTable from "@/components/slabs/SlabTable";
 
 import { tariffs } from "@/data/slabs";
 
-export default function SlabsPage() {
+export default function SlabsPage() {   
   return (
     <main className="relative min-h-screen overflow-hidden px-6 py-32">
       {/* BACKGROUND */}
